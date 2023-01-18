@@ -14,6 +14,7 @@ async function register(event){
 
         reg_data=JSON.stringify(reg_data)
 
+        
 
             let regURL="http://localhost:8080/users/register"
 

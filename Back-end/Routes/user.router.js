@@ -26,6 +26,7 @@ userRouter.post("/register",async(req,res)=>{
         console.log({"msg":"Something went wrong"})
     }
 })
+
 userRouter.post("/login",async(req,res)=>{
     const {email,password}=req.body
     try{
