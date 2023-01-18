@@ -1,0 +1,98 @@
+*{
+    margin:0px;
+    padding:0px
+}
+#main{
+    margin:auto;
+    width:75%;
+    display:flex;
+    justify-content: space-evenly;
+}
+form>h6{
+    font-family: Futura, Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgb(0, 31, 73);
+    padding:15px 0px 10px 0px
+}
+form>p{
+    font-family: Futura;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgb(2, 31, 73);
+   padding:0px 0px 10px 0px
+}
+
+input{
+    width:75%;
+    padding:15px 0px 15px 0px;
+    font-size: 16px;
+    color:rgb(136, 130, 130);
+    padding-left: 10px;
+}
+
+#main1{
+    width:48%
+}
+
+#main1>p{
+    font-family:  Futura, Arial;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    color: rgb(0, 31, 73);
+    margin: 20px 0px 15px 0px
+}
+form>button{
+    width:78%;
+    padding:15px 0px 15px 0px;
+    background-color:rgb(0, 31, 73);
+    font-family: Futura, Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: rgb(255, 255, 255);
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#main2{
+    margin-top:80px;
+}
+#main2>div{
+    display:flex;
+   
+}
+#main2>div>div>p{
+    margin-left: 20px;
+}
+#main2>h4,p{
+    padding:10px 0px 10px 0px
+}
+#main2>h4{
+    font-family: Futura, Arial;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    color: rgb(0, 31, 73);
+}
+#main2>p{
+    font-family: Futura, Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgb(0, 31, 73);
+}
+#main2>button{
+    width:100%;
+    padding:15px 0px 15px 0px;
+    background-color:rgb(0, 31, 73);
+    font-family: Futura, Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: rgb(255, 255, 255);
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
