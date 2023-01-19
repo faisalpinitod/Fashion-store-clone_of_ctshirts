@@ -108,3 +108,11 @@ select{
     margin-top: 25px;
     margin-bottom: 25px;
 }
+#main2>button:hover{
+    cursor: pointer;
+    background-color: rgb(124, 141, 164);
+}
+#form>button:hover{
+    cursor: pointer;
+    background-color: rgb(124, 141, 164);
+}

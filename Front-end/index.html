@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        #main1>div{
+            width:40%;
+            /* border:1px solid red; */
+            margin:auto;
+            position: absolute;
+            bottom: 32%;
+            left:30%
+        }
+        #main1>div>h1{
+            font-family: Futura, Arial;
+            font-size: 50px;
+            font-weight: 500;
+           line-height: 55px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        #main1>div>h3{
+            width:75%;
+            margin: auto;
+            font-family: Futura, Arial;
+            font-size: 25px;
+            font-weight: 400;
+           line-height:30px;
+            color: rgb(255, 208, 0);
+            text-align: center;
+            margin-bottom: 35px;
+        }
+        #main1>div>div{
+            
+            width:90%;
+            margin:auto;
+            text-align: center;
+             display: flex;
+            justify-content: space-around; 
+           
+        }
+        #main1>div>div>button{
+             padding:15px 50px 15px 50px;
+             font-family: Futura, Arial;
+            font-size: 14px;
+            font-weight: 400;
+           line-height: 18px;
+            color: rgb(0, 31, 73);
+            
+        }
+        #main1>div>div>button:nth-child(2){
+            padding:5px 70px 5px 70px;
+             font-family: Futura, Arial;
+            font-size: 14px;
+            font-weight: 400;
+           line-height: 18px;
+            color: rgb(0, 31, 73);
+        }
+        #main1>div>div>button:hover{
+            cursor: pointer;
+            background-color: rgb(232, 232, 232);
+        }
+
+        /* ============================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* ================================================= */
+        #main2{
+            margin-top: 50px;
+        }
+        #main2>div{
+            width:40%;
+            position: absolute;
+            left:60px;
+            bottom: -420px;
+        }
+        #main2>div>h1:nth-child(1){
+            width:40%;
+            font-family: Futura, Arial;
+            font-size: 40px;
+            font-weight: 600;
+           line-height: 44px;
+            color: rgb(255, 208, 0);
+        }
+        #main2>div>h1:nth-child(2){
+            width:60%;
+            font-family: Futura, Arial;
+            font-size: 33px;
+            font-weight: 400;
+           line-height: 36.3px;
+            color: rgb(255, 255, 255);
+        }
+        #main2>div>p{
+            width:103%;
+            font-family: Futura, Arial;
+            font-size: 16px;
+            font-weight: 400;
+           line-height: 22px;
+            color: rgb(255, 255, 255);
+        }
+        #main2>div>p~p{
+            width:60%;
+            font-family: Futura, Arial;
+            font-size: 16px;
+            font-weight: 400;
+           line-height: 22px;
+            color: rgb(255, 255, 255);
+           
+        }
+        #main2>div>button{
+            padding:15px 30px 15px 30px;
+             font-family: Futura, Arial;
+            font-size: 14px;
+            font-weight: 400;
+           line-height: 18px;
+            color: rgb(0, 31, 73);
+           margin-top: 20px;
+            
+        }
+
+        #main2>div>button:hover{
+            cursor: pointer;
+        }
+       #main3{
+
+        width:100%;
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-between;
+
+       }
+       #main3>div:nth-child(1){
+        width:20%;
+        margin: auto;
+        text-align: center;
+        
+       }
+       #main3>div:nth-child(2){
+        width:65%
+       }
+       #main3>div>h3{
+        font-family: Futura, Arial;
+            font-size: 20px;
+            font-weight: 600;
+           line-height: 22px;
+            color: rgb(55, 55, 55);
+       }
+       #main3>div>h1{
+        font-family: Futura, Arial;
+            font-size: 71px;
+            font-weight: 600;
+           line-height: 71px;
+            color: rgb(55, 55, 55);
+       }
+       #main3>div>h4{
+        font-family: Futura, Arial;
+            font-size: 16px;
+            font-weight: 600;
+           line-height: 22px;
+            color: rgb(55, 55, 55);
+       }
+       #main3>div>p{
+        font-family: Futura, Arial;
+            font-size: 16px;
+            font-weight: 400;
+           line-height: 22px;
+            color: rgb(124, 124, 124);
+       }
+       #main3>div>button{
+        padding:15px 70px 15px 70px;
+             font-family: Futura, Arial;
+            font-size: 14px;
+            font-weight: 400;
+           line-height: 18px;
+            color: rgb(0, 31, 73);
+            background-color: rgb(255, 255, 255);
+       }
+
+       #main3>div>button:hover{
+            cursor: pointer;
+            background-color: rgb(232, 232, 232);
+        }
+       
+        #main4{
+            margin-top: 50px;
+        }
+        #main4>div{
+            width:30%;
+            position: absolute;
+            left:100px;
+            top: 2150px;
+            text-align: center;
+        }
+        #main4>div>p{
+            font-family: Futura, Arial;
+            font-size: 16px;
+            font-weight: 400;
+           line-height: 22px;
+            color: rgb(255, 255, 255);
+        }
+        #main4>div>button{
+            padding:15px 70px 15px 70px;
+             font-family: Futura, Arial;
+            font-size: 14px;
+            font-weight: 400;
+           line-height: 18px;
+           color: rgb(255,255,255);
+            background-color: rgb(48, 54, 68);
+        }
+        #main4>div>button~button{
+            padding:15px 35px 15px 35px;
+             font-family: Futura, Arial;
+            font-size: 14px;
+            font-weight: 400;
+           line-height: 18px;
+            color: rgb(255,255,255);
+            background-color: rgb(48, 54, 68);
+            margin-top: 10px;
+        }
+        #main4>div>button:hover{
+            cursor: pointer;
+            color: rgb(0, 31, 73);
+            background-color: rgb(232, 232, 232);
+        }
+        #main5{
+            width:100%;
+            display:flex;
+            justify-content: space-evenly;
+            text-align: center;
+            background-color: rgb(245, 245, 245);
+            margin-top: 50px;
+        }
+        #main5>div{
+            width:20%
+        }
+        #main5>div:nth-child(3){
+            margin-top:25px
+        }
+        #main5>div>h3{
+            font-family: Futura, Arial;
+            font-size: 14px;
+            font-weight: 600;
+           line-height: 19.5px;
+            color: rgb(55,55,55);
+        }
+        #main5>div>p{
+            font-family: Futura, Arial;
+            font-size: 14px;
+            font-weight: 400;
+           line-height: 19.5px;
+            color: rgb(55,55,55);
+        }
+        #main6>div{
+            width:40%;
+            position: absolute;
+            right:100px;
+            top: 3250px;
+            text-align: center;
+        }
+        #main6>div>p{
+            font-family: Futura, Arial;
+            font-size: 20px;
+            font-weight: 400;
+           line-height: 22px;
+            color: rgb(255,255,255);
+        }
+        #main6>div>h1{
+            font-family: Futura, Arial;
+            font-size: 49px;
+            font-weight: 400;
+           line-height: 49px;
+            color: rgb(255,255,255);
+        }
+        #main6>div>button{
+            padding:15px 60px 15px 60px;
+             font-family: Futura, Arial;
+            font-size: 14px;
+            font-weight: 400;
+           line-height: 18px;
+            color: rgb(0, 31, 73);
+        }
+        #main6{
+            margin-top: 50px;
+        }
+        #main6>div>button:hover{
+            cursor: pointer;
+            color: rgb(0, 31, 73);
+            background-color: rgb(232, 232, 232);
+        }
+    </style>
+</head>
+<body>
+    <div id="main1">
+        <video width="100%" muted="" loop="" playsinline="" autoplay="autoplay" >
+            <source src="https://player.vimeo.com/progressive_redirect/playback/788572412/rendition/720p/file.mp4?loc=external&signature=d302a4ac2d7b06d9a4f3a0ad88015d243844035738d54dba32e5ba17f870829d" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+          </video>
+        <div>
+            <h1>Your Presentation Isn't Just
+                On Your Laptop</h1>
+            <h3>4 SHIRTS OR POLOS FOR $239
+                SAVE UP TO $235</h3>
+            <div>
+                <button>SHOP NEW SEASON</button>
+                <button>  SHOP SHIRTS  </button>
+            </div>
+        </div>
+    </div>
+    <!-- =============================================== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ======================================================== -->
+    <div id="main2">
+        <img width="100%" src="https://www.charlestyrwhitt.com/on/demandware.static/-/Library-Sites-CTShirtsSharedLibrary/default/dw73d084aa/merchAssets/SS23/Homepage/hp/henley-hp2-desktop.jpg" alt="">
+        <div>
+            <h1>NEW</h1>
+            <h1>Meet the Henley Weave,
+                our shirt of the season.</h1>
+            <p>You won’t find this dobby weave anywhere else. The cutaway collar has a modern feel for formal and relaxed looks, and natural stretch from 100% cotton keeps things comfy.</p>
+            <p>This non-iron hero comes in 10 designs and 3 fits.
+                Pick from checks, fresh pastels and classic blues.</p>
+            <button>SHOP THE COLLECTION</button>
+        </div>
+    </div>
+
+
+    <div id="main3">
+        <div>
+            <h3>4 SHIRTS OR POLOS</h3>
+            <h1>$239</h1>
+            <h4>SAVE UP TO $235</h4>
+            <p>For the office to working from home, and everything in between. Easy-to-wear shirts. At easy prices.</p>
+            <button>SHOP NOW</button>
+        </div>
+        <div>
+            <img width="100%" src="https://www.charlestyrwhitt.com/on/demandware.static/-/Library-Sites-CTShirtsSharedLibrary/default/dwbf2d6a6e/merchAssets/AW22/Homepage/multibuy/Multibuybook4-hp3.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="main4">
+        <img width="100%" src="https://www.charlestyrwhitt.com/on/demandware.static/-/Library-Sites-CTShirtsSharedLibrary/default/dwd93b8878/merchAssets/AW22/Homepage/wide-banner/custom-hp2-desktop.jpg" alt="">
+        <div>
+            <img width="70%" src="https://www.charlestyrwhitt.com/on/demandware.static/-/Library-Sites-CTShirtsSharedLibrary/default/dw8c98a202/merchAssets/AW22/Homepage/wide-banner/Custom22.svg" alt="">
+            <p>Our new Custom Shirt tool is here! Get creative as you pick your fabric, collar, cuffs and all the details that make it one-of-a-kind, then get it fitted to your measurements.</p>
+            <button>TELL ME MORE</button>
+            <button>CUSTOMIZE YOUR SHIRT</button>
+        </div>
+    </div>
+
+
+    <div id="main5">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ0J8OGV56cSBnzkB2Um4oaX-3-Uie5GnC5P2jfufHtg&s" alt="">
+            <h3>CARBON NEUTRAL</h3>
+            <p>We are proud to be Carbon Neutral with Planet Mark</p>
+        </div>
+        <div>
+            <img width="30%" src="https://www.charlestyrwhitt.com/on/demandware.static/Sites-CTShirts-US-Site/-/default/dwe61623c0/images/icons-large/express-delivery.svg" alt="">
+            <h3>SECURE DELIVERY WITH PREMIUM SHIPPING</h3>
+            <p>Premium shipping options available at checkout for full tracking end-to-end</p>
+        </div>
+        <div>
+            <img width="20%" src="https://www.charlestyrwhitt.com/on/demandware.static/Sites-CTShirts-US-Site/-/default/dw1a965e97/images/icons-large/padlock.svg" alt="">
+            <h3>SAFE & EASY PAYMENT</h3>
+            <p>Shopping is safe with Charles Tyrwhitt. We accept payments via credit card, PayPal and Apple Pay</p>
+        </div>
+        <div>
+            <img width="30%" src="https://www.charlestyrwhitt.com/on/demandware.static/Sites-CTShirts-US-Site/-/default/dw0023c946/images/icons-large/click-and-collect.svg" alt="">
+            <h3>6-MONTH RETURNS</h3>
+            <p>Exchange or return your purchase to stores or online, up to six months after receiving them
+            </p>
+        </div>
+    </div>
+
+    <div id="main6">
+        <img width="100%" src="https://www.charlestyrwhitt.com/on/demandware.static/-/Library-Sites-CTShirtsSharedLibrary/default/dwe28381b4/merchAssets/AW22/Homepage/wide-banner/recycling-hp5-desktop.jpg" alt="">
+        <div>
+            <h1>Donate & Save up to $40</h1>
+            <p>For every shirt you donate, you get $10 off a fresh one, or bring in 4 and you’ll get $40 off our shirt multibuy. Win-win.
+            </p>
+            <p>Bring any old shirt or polo (Tyrwhitt or not) to your nearest store, and we’ll donate them to local charities, so they can be reused.</p>
+            <button>FIND OUT MORE</button>
+        </div>
+    </div>
+</body>
+</html>

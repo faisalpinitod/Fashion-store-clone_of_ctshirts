@@ -10,7 +10,6 @@ const userSchema=mongoose.Schema({
     versionKey:false
 })
 
-
 const UserModel=mongoose.model("user",userSchema)
 
 module.exports={
