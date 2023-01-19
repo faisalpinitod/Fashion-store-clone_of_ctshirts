@@ -30,10 +30,17 @@ async function register(event){
         alert("Successful Registerd")
         console.log("Registerd")
         console.log(data) 
+        window.location=("login.html")
 
     }catch(err){
         console.log(err)
     }
 
     
+}
+
+document.querySelector("#sub").addEventListener("click",myfunc)
+
+async function myfunc(){
+    window.location=("login.html")
 }

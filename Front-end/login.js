@@ -35,3 +35,9 @@ async function login(event){
 
      
 }
+
+document.querySelector("#sub").addEventListener("click",myfunc)
+
+async function myfunc(){
+    window.location=("sign_up.html")
+}

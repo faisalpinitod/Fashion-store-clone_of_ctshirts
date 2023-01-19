@@ -3,6 +3,7 @@ const { connection } = require("./config/db")
 const cors=require("cors")
 
 const {userRouter}=require("./Routes/user.router")
+const {productRouter}=require("./Routes/product.router")
 
 
 const app=express()
@@ -20,6 +21,7 @@ app.get("/",async(req,res)=>{
 
 
 app.use("/users",userRouter)
+app.use("/products",productRouter)
 
 
 
