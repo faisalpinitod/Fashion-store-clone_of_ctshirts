@@ -35,8 +35,6 @@ async function register(event){
     }catch(err){
         console.log(err)
     }
-
-    
 }
 
 document.querySelector("#sub").addEventListener("click",myfunc)

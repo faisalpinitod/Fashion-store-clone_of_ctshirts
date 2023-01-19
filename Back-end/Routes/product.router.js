@@ -35,7 +35,6 @@ productRouter.get("/",async(req,res)=>{
 })
 
 
-
 productRouter.patch("/update/:id",async(req,res)=>{
     const Id=req.params.id
     const data=req.body

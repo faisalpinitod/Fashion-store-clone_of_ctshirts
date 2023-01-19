@@ -9,7 +9,6 @@ const {productRouter}=require("./Routes/product.router")
 const app=express()
 app.use(cors())
 
-
 app.get("/",async(req,res)=>{
     try{
         res.send("Welcome")
