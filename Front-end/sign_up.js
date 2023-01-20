@@ -42,3 +42,15 @@ document.querySelector("#sub").addEventListener("click",myfunc)
 async function myfunc(){
     window.location=("login.html")
 }
+document.querySelector("#img").addEventListener("click",myfunc2)
+
+async function myfunc2(){
+    window.location=("index.html")
+}
+
+
+
+
+
+
+

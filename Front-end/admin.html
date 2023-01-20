@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cont{
+            width:80%;
+            margin: auto;
+            display:flex;
+            justify-content: space-evenly;
+
+        }
+                #main,#main1{
+            width:25%;
+            padding:2%;
+            /* margin:auto; */
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin-top: 30px;
+        }
+        input,select{
+           padding-top: 10px;
+           padding-bottom: 10px;
+            width:95%;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border:1px solid gray;
+            font-size:15px;
+        }
+        #main,#main1>p{
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #sub,#sub1{
+            background-color: rgb(68, 68, 228);
+            color: aliceblue;
+            font-weight: 600;
+            font-size: 15px;
+        }
+        #container{
+            width: 95%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            gap: 10px;
+            margin-top: 15px;
+        }
+        #container p{
+            font-size: 70%;
+            font-weight: 600;
+            text-align: center;
+        }
+        #card{
+            
+           border: 1px solid gray;
+        }
+        #cartdiv1{
+            text-align: center;
+        }
+        #cartdiv1>img{
+            width: 100%;
+
+           
+        }
+        h3{
+            margin: 30px;
+        }
+        #cartdiv2{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+   
+    <div id="cont">
+        <div id="main">
+            <p>Posting the Data</p>
+            <form action="">
+                <input type="text" placeholder="Title" id="title">
+                <input type="number" placeholder="Price" id="price">
+                <input type="text" placeholder="Image Url" id="img">
+                <input type="text" placeholder="Brand" id="brand">
+                <input type="submit"  id="sub">
+    
+            </form>
+        </div>
+        <div id="main1">
+            <p>Update and Delete the Data</p>
+            <form action="" id="form1">
+                <select name="    Add Method" id="method">
+                    <option value="">Add Method</option>
+                    <option value="edit">Edit</option>
+                    <option value="delete">Delete</option>
+                </select>
+                <input type="text" placeholder="Product Id" id="id">
+                <select name="    Add role" id="field">
+                    <option value="">Select Type</option>
+                    <option value="title">Title</option>
+                    <option value="price">Price</option>
+                    <option value="img">Image Url</option>
+                    <option value="brand">Brand</option>
+                </select>
+                <input type="text" placeholder="Item" id="input">
+                <input type="submit"  id="sub1">
+    
+            </form>
+        </div>
+    </div>
+    <h3>Products:</h3>
+    <div id="container">
+
+    </div>
+       
+   
+</body>
+</html>
+<script>
+
+
+fetch("http://localhost:8080/products")   
+    .then((res)=>res.json())
+    .then((data)=>{
+        
+        cardsData=data
+        console.log(data[0])
+        renderProducts(data)
+          
+    })
+ 
+
+    let container=document.querySelector("#container")
+    console.log(container)
+    
+    function renderProducts(data){
+        container.innerHTML=""
+        data.forEach(function(ele){
+
+            
+                let card=document.createElement("div")
+                card.setAttribute("id","card")
+
+                let image = document.createElement("img")
+                image.setAttribute("src",ele.img)
+
+                let id = document.createElement("p")
+                id.textContent="id:"+ele._id
+                
+
+                let title = document.createElement("p")
+                title.textContent="title:"+ele.title
+                title.setAttribute("id","title")
+
+
+                let price = document.createElement("p")
+                price.textContent="price:"+ele.price
+                price.setAttribute("id","price")
+
+
+
+                let Brand = document.createElement("p")
+                Brand.textContent="brand:"+ele.brand
+                Brand.setAttribute("id","brand")
+
+                  
+                let cartdiv1=document.createElement("div")
+                cartdiv1.setAttribute("id","cartdiv1")
+                
+                let cartdiv2=document.createElement("div")
+                cartdiv2.setAttribute("id","cartdiv2")
+                
+        
+                
+                cartdiv1.append(image)
+                cartdiv2.append(id,title,Brand,price)
+                card.append(cartdiv1,cartdiv2)
+                document.querySelector("#container").append(card)
+
+
+        })
+
+    }
+
+
+
+
+
+// -----------------------------------------------------------
+    document.querySelector("form").addEventListener("submit",add)
+    async function add(event){
+        event.preventDefault()
+        try{
+            let title=document.querySelector("#title").value
+            let price=document.querySelector("#price").value
+            let img=document.querySelector("#img").value
+            let brand=document.querySelector("#brand").value
+        
+            let post_data={title,price,img,brand}
+            console.log(post_data)
+
+
+            let regURL="http://localhost:8080/products/add"
+
+            let response=await fetch(regURL,{
+                method:"POST",
+                body:JSON.stringify(post_data),
+                headers:{
+                    "Content-Type":"application/json"
+                }
+            })
+            let data=await response.json()
+            console.log(data)
+
+        }catch(err){
+            console.log(err)
+            console.log({"msg":"Something went wrong"})
+        }
+    }
+
+
+
+    document.querySelector("#form1").addEventListener("submit",edit)
+    async function edit(event){
+        event.preventDefault()
+        let method=document.querySelector("#method").value
+        try{
+            if(method=="edit"){
+                let id=document.querySelector("#id").value
+                let item=document.querySelector("#field").value
+                let input=document.querySelector("#input").value
+            
+                let post_data={
+                    [item]:input
+                }
+                console.log(post_data)
+
+
+                let regURL=`http://localhost:8080/products/update/${id}`
+
+                let response=await fetch(regURL,{
+                    method:"PATCH",
+                    body:JSON.stringify(post_data),
+                    headers:{
+                        "Content-Type":"application/json"
+                    }
+                })
+                let data=await response.json()
+                console.log(data)
+            }
+            else if(method=="delete"){
+                let id=document.querySelector("#id").value
+             
+  
+                let regURL=`http://localhost:8080/products/delete/${id}`
+
+                let response=await fetch(regURL,{
+                    method:"DELETE",
+                    headers:{
+                        "Content-Type":"application/json"
+                    }
+                })
+                let data=await response.json()
+                console.log(data)
+                console.log("Product is deleted")
+            }
+        }
+        catch(err){
+            console.log(err)
+            console.log({"msg":"Something went wrong"})
+        }
+    }
+</script>
