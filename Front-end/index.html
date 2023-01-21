@@ -46,8 +46,8 @@
                     </a>
                 </div>
             </div>    
-            <div id="mini-cart" class="js-minicart header__minicart minicart d-inline-block mps-p-right-z p-right-xs">
-                <a aria-label="Bag" data-tracking="header-nav-url" data-tracking-custom-value="minibag" href="" title="Bag" class="minicart__link js-minicart d-block position-relative  ">
+            <div id="mini-cart">
+                <a aria-label="Bag" data-tracking="header-nav-url" data-tracking-custom-value="minibag"  >
                 <svg class="" style="width:40px; height:40px;" viewBox="0 0 48 48" aria-label="">
                 <symbol viewBox="0 0 48 48" id="icon-bag">
                 <rect fill="none" stroke="#001F49" fill-rule="evenodd" x="11" y="15" width="26" height="20"></rect>
@@ -62,19 +62,19 @@
 
     <div id="drop">
         <div>
-            <p>SHIRTS</p>
+            <p class="shirt">SHIRTS</p>
             <p>|</p>
-            <p>SUITS</p>
+            <p class="shirt">SUITS</p>
             <p>|</p>
-            <p>PANTS</p>
+            <p class="shirt">PANTS</p>
             <p>|</p>
-            <p>SWEATERS</p>
+            <p class="shirt">SWEATERS</p>
             <p>|</p>
-            <p>JACKETS & COATS</p>
+            <p class="shirt">JACKETS & COATS</p>
             <p>|</p>
-            <p>SHOES</p>
+            <p class="shirt">SHOES</p>
             <p>|</p>
-            <p>ACCESSORIES</p>
+            <p class="shirt">ACCESSORIES</p>
         </div>
 
     </div>
@@ -92,7 +92,7 @@
                 SAVE UP TO $235</h3>
             <div>
                 <button>SHOP NEW SEASON</button>
-                <button>  SHOP SHIRTS  </button>
+                <button class="fun">  SHOP SHIRTS  </button>
             </div>
         </div>
     </div>
@@ -120,7 +120,7 @@
             <p>You won’t find this dobby weave anywhere else. The cutaway collar has a modern feel for formal and relaxed looks, and natural stretch from 100% cotton keeps things comfy.</p>
             <p>This non-iron hero comes in 10 designs and 3 fits.
                 Pick from checks, fresh pastels and classic blues.</p>
-            <button>SHOP THE COLLECTION</button>
+            <button class="fun">SHOP THE COLLECTION</button>
         </div>
     </div>
 
@@ -131,7 +131,7 @@
             <h1>$239</h1>
             <h4>SAVE UP TO $235</h4>
             <p>For the office to working from home, and everything in between. Easy-to-wear shirts. At easy prices.</p>
-            <button>SHOP NOW</button>
+            <button class="fun">SHOP NOW</button>
         </div>
         <div>
             <img width="100%" src="https://www.charlestyrwhitt.com/on/demandware.static/-/Library-Sites-CTShirtsSharedLibrary/default/dwbf2d6a6e/merchAssets/AW22/Homepage/multibuy/Multibuybook4-hp3.jpg" alt="">
@@ -144,7 +144,7 @@
             <img width="70%" src="https://www.charlestyrwhitt.com/on/demandware.static/-/Library-Sites-CTShirtsSharedLibrary/default/dw8c98a202/merchAssets/AW22/Homepage/wide-banner/Custom22.svg" alt="">
             <p>Our new Custom Shirt tool is here! Get creative as you pick your fabric, collar, cuffs and all the details that make it one-of-a-kind, then get it fitted to your measurements.</p>
             <button>TELL ME MORE</button>
-            <button>CUSTOMIZE YOUR SHIRT</button>
+            <button class="fun">CUSTOMIZE YOUR SHIRT</button>
         </div>
     </div>
 
@@ -313,4 +313,26 @@
     function login(){
         window.location=("login.html")
     }
+    document.querySelector("#mini-cart").addEventListener("click",login1)
+
+    function login1(){
+        window.location=("cart.html")
+    }
+    let p=document.querySelectorAll(".shirt")
+    for(i=0;i<p.length;i++){
+        p[i].addEventListener("click",login2)
+    }
+    function login2(){
+        window.location=("product.html")
+    }
+    let s=document.querySelectorAll(".fun")
+    for(i=0;i<s.length;i++){
+        s[i].addEventListener("click",login3)
+    }
+    function login3(){
+        window.location=("product.html")
+    }
+  
+
+
 </script>

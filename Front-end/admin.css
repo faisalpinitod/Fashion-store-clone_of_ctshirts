@@ -1,174 +1,129 @@
-*{
-    margin:0px;
-    padding:0px
-}
+
 #nav{
-            width:90%;
-            margin: auto;
-            display:flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-            margin-top: 10px;
-        }
-        #nav2{
-            width:30%;
-            display:flex;
-            justify-content: space-between;
-            height:15%
+    width:90%;
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.abd:hover{
+    cursor: pointer;
+}
+#nav2{
+    width:30%;
+    display:flex;
+    justify-content: space-between;
+    height:15%
 
-        }
-        #img{
-            text-align: end;
-        }
-      
-        #nav2>div{
-            margin-right: -20px;
-        }
-        #search>input{
-            width:150%;
-            padding: 10px;
-            /* margin-top: 3px; */
+}
+#img{
+    text-align: end;
+}
 
-        }
-       #drop{
-        width:100%;
-        margin: auto;
-        padding: 10px 0px 10px 0px;
-        background-color: rgb(235, 237, 243);
-       }
-       #img:hover{
-        cursor: pointer;
+#nav2>div{
+    margin-right: -20px;
+}
+#search>input{
+    width:165%;
+    padding: 10px;
+    /* margin-top: 5px; */
+
+}
+    #drop{
+    width:100%;
+    margin: auto;
+    background-color: rgb(235, 237, 243);
     }
-       #drop>div{
-        width:55%;
-        margin: auto;
-        display:flex;
-        justify-content: space-evenly;
-       }
-       #drop>div>p{
-        font-family: Futura, Arial;
-            font-size: 12px;
-            font-weight: 400;
-           line-height:18px;
-            color: rgb(55, 55, 55);
-       }
-       #drop>div>p:hover{
-        cursor: pointer;
-        background-color: white;
-        /* padding:2px 5px 2px 5px */
-       }
-#main{
-    margin:auto;
-    width:75%;
+    #drop>div{
+    width:55%;
+    margin: auto;
     display:flex;
     justify-content: space-evenly;
-}
-form>h6{
+    }
+    #drop>div>p{
     font-family: Futura, Arial;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-    color: rgb(0, 31, 73);
-    padding:15px 0px 10px 0px
-}
-form>p{
-    font-family: Futura;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-    color: rgb(2, 31, 73);
-   padding:0px 0px 10px 0px
-}
-
-input{
-    width:75%;
-    padding:15px 0px 15px 0px;
-    font-size: 16px;
-    color:rgb(136, 130, 130);
-    padding-left: 10px;
-}
-
-#main1{
-    width:48%
-}
-
-#main1>p{
-    font-family:  Futura, Arial;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 28px;
-    color: rgb(0, 31, 73);
-    margin: 20px 0px 15px 0px
-}
-form>button{
-    width:78%;
-    padding:15px 0px 15px 0px;
-    background-color:rgb(0, 31, 73);
-    font-family: Futura, Arial;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    color: rgb(255, 255, 255);
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-#main2{
-    margin-top:80px;
-}
-#main2>div{
+        font-size: 12px;
+        font-weight: 400;
+    line-height:18px;
+        color: rgb(55, 55, 55);
+    }
+#drop>div>p:hover{
+    cursor: pointer;
+    background-color: white;
+    padding: 5px 15px 5px 15px;
+    
+   }#cont{
+    width:80%;
+    margin: auto;
     display:flex;
+    justify-content: space-evenly;
+
+}
+        #main,#main1{
+    width:25%;
+    padding:2%;
+    /* margin:auto; */
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 30px;
+}
+input,select{
+   padding-top: 10px;
+   padding-bottom: 10px;
+    width:95%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border:1px solid gray;
+    font-size:15px;
+}
+#main,#main1>p{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#sub,#sub1{
+    background-color: rgb(68, 68, 228);
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 15px;
+}
+#container{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+#container p{
+    font-size: 70%;
+    font-weight: 600;
+    text-align: center;
+}
+#card{
+    
+   border: 1px solid gray;
+}
+#cartdiv1{
+    text-align: center;
+}
+#cartdiv1>img{
+    width: 100%;
+
    
 }
-#main2>div>div>p{
-    margin-left: 20px;
+h3{
+    margin: 30px;
 }
-#main2>h4,p{
-    padding:10px 0px 10px 0px
+#cartdiv2{
+    padding: 10px;
 }
-#main2>h4{
-    font-family: Futura, Arial;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 22px;
-    color: rgb(0, 31, 73);
-}
-#main2>p{
-    font-family: Futura, Arial;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-    color: rgb(0, 31, 73);
-}
-#main2>button{
-    width:100%;
-    padding:15px 0px 15px 0px;
-    background-color:rgb(0, 31, 73);
-    font-family: Futura, Arial;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    color: rgb(255, 255, 255);
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-#main2>button:hover{
-    cursor: pointer;
-    background-color: rgb(124, 141, 164);
-}
-form>button:hover{
-    cursor: pointer;
-    background-color: rgb(124, 141, 164);
-}
-
-
- /* ----------------------------------------footer--------------------------------------- */
- #foot1{
+#foot1{
     width:100%;
     margin: auto;
     background-color: rgb(235, 237, 243);
     padding: 15px 0px 15px 0px;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 #foot1>div{
     width:48%;
@@ -214,7 +169,7 @@ footer{display: grid;
 
 footer ul li{
     list-style-type: none;
-    /* margin-left: -10px;  */
+    margin-left: -40px; 
     line-height: 40px;
 }
 
