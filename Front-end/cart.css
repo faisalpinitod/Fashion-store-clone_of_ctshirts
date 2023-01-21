@@ -1,174 +1,251 @@
-*{
-    margin:0px;
-    padding:0px
-}
 #nav{
-            width:90%;
-            margin: auto;
-            display:flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-            margin-top: 10px;
-        }
-        #nav2{
-            width:30%;
-            display:flex;
-            justify-content: space-between;
-            height:15%
+    width:90%;
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.abd:hover{
+    cursor: pointer;
+}
+#img:hover{
+    cursor: pointer;
+}
+#nav2{
+    width:30%;
+    display:flex;
+    justify-content: space-between;
+    height:15%
 
-        }
-        #img{
-            text-align: end;
-        }
-      
-        #nav2>div{
-            margin-right: -20px;
-        }
-        #search>input{
-            width:150%;
-            padding: 10px;
-            /* margin-top: 3px; */
+}
+#img{
+    text-align: end;
+}
 
-        }
-       #drop{
-        width:100%;
-        margin: auto;
-        padding: 10px 0px 10px 0px;
-        background-color: rgb(235, 237, 243);
-       }
-       #img:hover{
-        cursor: pointer;
-    }
-       #drop>div{
-        width:55%;
-        margin: auto;
-        display:flex;
-        justify-content: space-evenly;
-       }
-       #drop>div>p{
-        font-family: Futura, Arial;
-            font-size: 12px;
-            font-weight: 400;
-           line-height:18px;
-            color: rgb(55, 55, 55);
-       }
-       #drop>div>p:hover{
-        cursor: pointer;
-        background-color: white;
-        /* padding:2px 5px 2px 5px */
-       }
+#nav2>div{
+    margin-right: -20px;
+}
+#search>input{
+    width:165%;
+    padding: 10px;
+    /* margin-top: 5px; */
+
+}
+    
 #main{
-    margin:auto;
-    width:75%;
+    width: 80%;
+    margin: auto;
     display:flex;
-    justify-content: space-evenly;
-}
-form>h6{
-    font-family: Futura, Arial;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-    color: rgb(0, 31, 73);
-    padding:15px 0px 10px 0px
-}
-form>p{
-    font-family: Futura;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-    color: rgb(2, 31, 73);
-   padding:0px 0px 10px 0px
+  
+    gap:80px
 }
 
-input{
-    width:75%;
-    padding:15px 0px 15px 0px;
-    font-size: 16px;
-    color:rgb(136, 130, 130);
-    padding-left: 10px;
-}
-
-#main1{
-    width:48%
-}
-
-#main1>p{
-    font-family:  Futura, Arial;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 28px;
-    color: rgb(0, 31, 73);
-    margin: 20px 0px 15px 0px
-}
-form>button{
-    width:78%;
-    padding:15px 0px 15px 0px;
-    background-color:rgb(0, 31, 73);
-    font-family: Futura, Arial;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    color: rgb(255, 255, 255);
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-#main2{
-    margin-top:80px;
-}
-#main2>div{
-    display:flex;
+#cont1{
+  
+    width:55%;
+    margin-top: 75px;
+ 
    
 }
-#main2>div>div>p{
-    margin-left: 20px;
-}
-#main2>h4,p{
-    padding:10px 0px 10px 0px
-}
-#main2>h4{
+#cont1>h3{
     font-family: Futura, Arial;
     font-size: 20px;
-    font-weight: 600;
-    line-height: 22px;
-    color: rgb(0, 31, 73);
+    font-weight: 400;
+    line-height:22px;
+    color: rgb(55, 55, 55);
 }
-#main2>p{
+
+#sum>div>h3{
     font-family: Futura, Arial;
     font-size: 16px;
     font-weight: 400;
-    line-height: 22px;
-    color: rgb(0, 31, 73);
+    line-height:22px;
+    color: rgb(55, 55, 55);
 }
-#main2>button{
+#sum2{
+    display:flex;
+    justify-content: space-between;
+}
+#mass>p{
+    font-family: Futura, Arial;
+    font-size: 12px;
+    font-weight: 400;
+    line-height:normal;
+    color: rgb(55, 55, 55);
+}
+#sum5>p{
+    margin-top: 25px;
+    font-family: Futura, Arial;
+    font-size: 12px;
+    font-weight: 600;
+    line-height:normal;
+    color: rgb(55, 55, 55);
+}
+#sum5{
+    display:flex;
+    justify-content: space-between;
+}
+#sum>button{
+    width:92%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(16, 112, 101);
+    color: white;
+    
+    
+}
+#class>p{
+    font-family: Futura, Arial;
+    font-size: 14px;
+    font-weight: 600;
+    line-height:normal;
+    color: rgb(94, 94, 94);
+    margin-top: 5px;
+}
+#sum{
+    background-color: rgb(245, 245, 245);
+    height: 280px;
+    padding-top: 5px;
+    padding-left: 25px;
+}
+#cont{
     width:100%;
-    padding:15px 0px 15px 0px;
-    background-color:rgb(0, 31, 73);
+    
+}
+#cont>div>div>div>img{
+    width:25%
+}
+#sum5>p~p{
+    margin-right:35px ;
+    font-family: Futura, Arial;
+    font-size: 16px;
+    font-weight: 600;
+    line-height:normal;
+    color: rgb(55, 55, 55);
+}
+.image{
+    display: flex;
+    justify-content: space-between;
+}
+.image>h3{
+   
+   
+    font-family: Futura, Arial;
+    font-size: 20px;
+    font-weight: 400;
+    line-height:30.8px;
+    color: rgb(55, 55, 55);
+}
+.main>h3{
+    font-family: Futura, Arial;
+    font-size: 20px;
+    font-weight: 400;
+    line-height:30.8px;
+    color: rgb(55, 55, 55);
+}
+
+.image>button{
+    background-color: white;
+    border: 1px white;
     font-family: Futura, Arial;
     font-size: 14px;
     font-weight: 400;
-    line-height: 18px;
-    color: rgb(255, 255, 255);
-    margin-top: 25px;
-    margin-bottom: 25px;
+    line-height:normal;
+    color: rgb(94, 94, 94);
 }
-
-#main2>button:hover{
+.image>button:hover{
     cursor: pointer;
-    background-color: rgb(124, 141, 164);
 }
-form>button:hover{
-    cursor: pointer;
-    background-color: rgb(124, 141, 164);
+.imgp{
+    width:100%;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.four{
+   width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+   
+}
+.four>p:nth-child(1){
+    width:40%;
+    margin-left: 50px;
+    font-family: Futura, Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height:18px;
+    color: rgb(102, 102, 102);
+    
+   
+}
+.four>p:nth-child(2){
+    font-family: Futura, Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height:18px;
+    color: rgb(102, 102, 102);
+    
+   
 }
 
+.five{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.five>p:nth-child(1){
+    width:40%;
+    margin-left: 50px;
+    font-family: Futura, Arial;
+    font-size: 14px;
+    font-weight: 600;
+    line-height:38px;
+    color: rgb(94, 94, 94);
+    
+   
+}
+.five>p:nth-child(2){
+    
+    
+    font-family: Futura, Arial;
+    font-size: 14px;
+    font-weight: 600;
+    line-height:35px;
+    color: rgb(55, 55, 55);
+    
+   
+}
+.main5{
+    margin-right: 35px;
+}
+.main>h1~hr{
+width:100%;
+margin-left: 0px;
 
- /* ----------------------------------------footer--------------------------------------- */
- #foot1{
+}
+.main>h1{
+font-family: "Commuter Sans", Verdana;
+    font-size: 24px;
+    font-weight: 600;
+    line-height:40px;
+    color: rgb(55, 55, 55);
+}
+.three>hr{
+margin-left: 50px;
+color: rgb(0, 31, 73);
+}
+
+#foot1{
     width:100%;
     margin: auto;
     background-color: rgb(235, 237, 243);
     padding: 15px 0px 15px 0px;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 #foot1>div{
     width:48%;
@@ -214,7 +291,7 @@ footer{display: grid;
 
 footer ul li{
     list-style-type: none;
-    /* margin-left: -10px;  */
+    margin-left: -40px; 
     line-height: 40px;
 }
 
