@@ -77,6 +77,9 @@ input,select{
     border:1px solid gray;
     font-size:15px;
 }
+#mini-cart:hover{
+    cursor: pointer;
+}
 #main,#main1>p{
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

@@ -13,6 +13,29 @@ margin-top: 10px;
 .abd:hover{
 cursor: pointer;
 }
+#mini-cart:hover{
+    cursor: pointer;
+}
+
+#shift{
+    width:98%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    
+    margin-top: 10px;
+   
+ 
+}
+#shift1{
+    width:15%;
+    padding: 8px;
+    border:1px solid white;
+    background-color: rgb(245, 245, 245);
+    /* display: flex; */
+   
+    /* align-content: flex-end; */
+}
 #nav2{
 width:30%;
 display:flex;
@@ -63,17 +86,32 @@ padding: 5px 15px 5px 15px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap:5px;
-    width:90%;
+    width:85%;
     margin-top: 15px;
+   
 
 }
-
+#bold{
+    font-family: Futura, Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height:22px;
+    color: rgb(55, 55, 55);
+}
+.sortby{
+    font-family: Futura, Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height:22px;
+    color: rgb(55, 55, 55);
+}
 #cont>div{
-    width:85%;
+    width:95%;
     
 }
 #cont>div>img{
     width:100%;
+    margin-right: 0px;
 }
 #cont>div>h4{
     font-family: Futura, Arial;
@@ -92,7 +130,7 @@ padding: 5px 15px 5px 15px;
     padding-bottom:15px;
 }
 #cont>div>button{
-    width:40%;
+    width:50%;
     height:40px;
     border: 1px solid white;
     background-color: rgb(137, 140, 149);
@@ -107,7 +145,7 @@ padding: 5px 15px 5px 15px;
 #cont>div>button:hover{
     background-color:rgb(4, 92, 94); 
     cursor: pointer;
-    padding:5px;
+    /* padding:5px; */
 }
 
 #cont>div>h2~h2{
@@ -115,7 +153,7 @@ padding: 5px 15px 5px 15px;
 }
 
 #main{
-    width:100%;
+    width:98%;
     margin:auto;
     display:flex;
     justify-content: space-between;
@@ -200,7 +238,12 @@ margin-left: 100px;
 margin-right: 100px;
 font-family: "TT_Norms_Pro",-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Roboto,Oxygen-Sans,"Fira Sans","Droid Sans",Ubuntu,Cantarell,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
-
+#bold{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(245, 245, 245);
+    
+}
 
 footer ul li{
 list-style-type: none;
@@ -222,6 +265,20 @@ text-underline-offset: 4px;
 
 footer a:hover{
 color: #08cf65
+}
+select{
+    width:100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-family: Futura, Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height:22px;
+    color: rgb(55, 55, 55);
+    border: 1px solid white;
+}
+label{
+    margin-top: 5px;
 }
 
 footer a{
@@ -330,4 +387,101 @@ margin-top: 10px;
 .sk_polocy{line-height: 20px;}
 
 
+}
+
+
+
+/* ------------------------------------------ */
+
+#sort{
+    width: 20%; 
+    margin-right:30px;
+    margin-top: 18px;
+    margin-left: 20px;
+
+      
+}
+#grey{
+   color: #525252; 
+}
+#type{
+    font-family: 'Times New Roman';
+    font-weight: 100;
+    font-size: 30px;
+    width: 95%;
+}
+#sort>div>#bold{
+    font-weight: 550;
+    font-size: 17px;
+}
+#category>p:hover{
+    text-decoration: 1.5px underline;
+    cursor: pointer;
+}
+.sortby {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+
+}
+
+/* Hide the browser's default radio button */
+.sortby input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.sortby:hover input ~ .checkmark {
+
+    border: 1px solid black;
+}
+
+/* When the radio button is checked, add a blue background */
+.sortby input:checked ~ .checkmark {
+    background-color: #003fa3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.sortby input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.sortby .checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 7px;
+    height: 7px;
+    border-radius: 60%;
+    background: white;
+}
+
+#mad{
+    width:100%;
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+    
 }

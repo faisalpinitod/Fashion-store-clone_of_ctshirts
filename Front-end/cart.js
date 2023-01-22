@@ -1,17 +1,14 @@
-let data1=JSON.parse(localStorage.getItem("cart")) || []
+let data1=JSON.parse(localStorage.getItem("cart"))
 let total=localStorage.getItem("total")|| 0;
 displaycart(data1)
 function displaycart(data){
 total=0
 document.querySelector("#cont").innerHTML=""
-// document.querySelector("#main5").innerHTML=0
 
 data.forEach((ele,i) => {
     
     let divu=document.createElement("div")
    
-
-    
     let divx=document.createElement("div")
 
     let divy=document.createElement("div")
@@ -26,7 +23,7 @@ data.forEach((ele,i) => {
     div4.setAttribute("class","four")
 
     let size=document.createElement("p")
-    size.innerText="Classic,   16 collar size (inch),35 sleeve length (inch),  Button cuff,Slim,   16 collar size (inch),   35 sleeve length (inch),   Button cuff"
+    size.innerText="Classic,   16 collar size (inch),35 sleeve length (inch),  Button cuff,Slim,   16 collar size (inch),   35 sleeve length (inch)"
 
     let quan=document.createElement("p")
     quan.innerText="Quantity:1"
@@ -96,4 +93,9 @@ async function myfunc2(){
 
     function login(){
         window.location=("login.html")
+    }
+    document.querySelector("#button").addEventListener("click",login4)
+
+    function login4(){
+        window.location=("payment.html")
     }

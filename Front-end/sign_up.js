@@ -16,7 +16,7 @@ async function register(event){
 
         
 
-            let regURL="http://localhost:8080/users/register"
+            let regURL="https://wild-tan-beret.cyclic.app/users/register"
 
         let response= await fetch(regURL,{
             method:"POST",

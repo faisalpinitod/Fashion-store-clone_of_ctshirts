@@ -7,14 +7,17 @@ async function login(event){
        
         let email=document.querySelector("#email").value
         let password=document.querySelector("#pass").value
-       
+        if(email=="user@admin" && password=="admin"){
+            window.location="admin.html";
+            return
+        }
         reg_data={email,password}
         reg_data=JSON.stringify(reg_data)
 
 
         
 
-        let regURL="http://localhost:8080/users/login"
+        let regURL="https://wild-tan-beret.cyclic.app/users/login"
 
         let response= await fetch(regURL,{
             method:"POST",
@@ -23,11 +26,15 @@ async function login(event){
                 "Content-Type":"application/json"
             }
         })
-
+        
         let data=await response.json()
-        alert("Login Successful")
-        console.log("Loged In")
-        console.log(data)
+       
+            window.location="index.html"
+            alert("Login Successful")
+            console.log("Loged In")
+            console.log(data)
+        
+     
 
     }catch(err){
         console.log(err)
