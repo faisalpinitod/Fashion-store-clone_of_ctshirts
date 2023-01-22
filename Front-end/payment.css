@@ -1,0 +1,131 @@
+#nav{
+    width:90%;
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.abd:hover{
+    cursor: pointer;
+}
+#nav2{
+    width:30%;
+    display:flex;
+    justify-content: space-between;
+    height:15%
+
+}
+#img{
+    text-align: end;
+}
+
+#nav2>div{
+    margin-right: -20px;
+}
+#search>input{
+    width:165%;
+    padding: 10px;
+    /* margin-top: 5px; */
+
+}
+.rapper{
+    width:30%;
+    margin: auto;
+    margin-top: 30px;
+    padding-left: 30px;
+    display: flex-start;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
+.input_box{
+    padding-top: 20px;
+}
+
+.input{
+    padding-top: 20px;
+    
+}
+.input>input{
+    width:25%;
+    height:25px;
+    margin-top:5px
+}
+
+.rapper>h2{
+    margin-bottom: 20px;
+    padding-top: 20px;
+    font-family: Futura, Arial;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    color: rgb(0, 31, 73);
+
+}
+.input_box>input{
+    width:80%;
+    height:40px;
+    border:0.1px solid gray
+
+}
+.input1>h4{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    
+}
+.input1>input{
+    margin-bottom: 15px;
+    margin-right: 5px;
+}
+.input1{
+    width:50%
+
+}
+.input1>label{
+    margin-right: 15px;
+}
+h4{
+    font-family: Futura, Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    color: rgb(0, 31, 73);
+}
+.input2>h4{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-family: Futura, Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    color: rgb(0, 31, 73);
+    
+}
+.input2>input{
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+.input2{
+    width:50%
+
+}
+.input2>label{
+    margin-right: 15px;
+}
+
+.name{
+    width:82%;
+    height:45px;
+    color:gray
+}
+
+#sub{
+    height:45px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    background-color:rgb(0, 31, 73);
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    width:82%
+}

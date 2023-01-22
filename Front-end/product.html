@@ -34,7 +34,7 @@
         </div>
         <div id="nav2">
             <div id="search">
-                <input type="search" >
+                <input onchange="mychange()" type="search" class="search">
             </div>
             <div class="header__links text-right col-25 mps-col-30">
                 <div class="js-header-search header__search-wrap grey1 d-inline-block text-left">
@@ -47,8 +47,8 @@
                     </a>
                 </div>
             </div>    
-            <div id="mini-cart" class="js-minicart header__minicart minicart d-inline-block mps-p-right-z p-right-xs">
-                <a aria-label="Bag" data-tracking="header-nav-url" data-tracking-custom-value="minibag" href="" title="Bag" class="minicart__link js-minicart d-block position-relative  ">
+            <div id="mini-cart">
+                <a aria-label="Bag" data-tracking="header-nav-url" data-tracking-custom-value="minibag"  >
                 <svg class="" style="width:40px; height:40px;" viewBox="0 0 48 48" aria-label="">
                 <symbol viewBox="0 0 48 48" id="icon-bag">
                 <rect fill="none" stroke="#001F49" fill-rule="evenodd" x="11" y="15" width="26" height="20"></rect>
@@ -75,7 +75,159 @@
           
         </div>
     </div>
- </div>   
+ </div> 
+ <div id="shift">
+    <select  onchange="sortfunc()" id="shift1" >
+        <option value="sort by">Sort by:</option>
+        <option value="low">PRICE(HIGH TO LOW)</option>
+        <option value="high">PRICE(LOW TO HIGH)</option>
+    </select>
+</div> 
+<div id="mad">
+    
+        
+        <div id="sort">
+            
+            <div id="sortby">
+                <hr>
+                <h3 id="bold">SORT BY</h3>
+                <hr>
+                <label class="sortby">
+                    <input type="radio"  name="radio">Featured 
+                    <span class="checkmark" id="c1"></span>
+                </label>
+                <label class="sortby">
+                    <input type="radio"  name="radio">Rated 
+                    <span class="checkmark" id="c2"></span>
+                </label>
+                <label class="sortby">
+                    <input type="radio"  name="radio">Price 
+                    <span class="checkmark" id="c3"></span>
+                </label>
+                <label class="sortby">
+                    <input type="radio"  name="radio">Brand 
+                    <span class="checkmark" id="c4"></span>
+                </label>
+            </div>
+            <hr>
+            <div id="filterby">
+                <h3 id="bold">FILTER BY</h3>
+                <hr>
+                <div id="color1">
+                    <div id="color">
+                        <div  class="button">
+                            <select name="COLOR" id="">
+                                <option value="">COLOR</option>
+                                <option value="">WHITE</option>
+                                <option value="">BLACK</option>
+                                <option value="">BLUE</option>
+                                <option value="">YELLOW</option>
+                            </select>
+                        </div>
+                        <hr>
+                        <div  class="button">
+                            <select name="COLOR" id="">
+                                <option value="">SIZE</option>
+                                <option value="">32</option>
+                                <option value="">34</option>
+                                <option value="">36</option>
+                                <option value="">38</option>
+                            </select>
+                        </div>
+                        <hr>
+                        <div  class="button">
+                            <select name="COLOR" id="">
+                                <option value="">BRAND</option>
+                                <option value="">NIKE</option>
+                                <option value="">PUMA</option>
+                                <option value="">ADDIDAS</option>
+                                <option value="">PETER ENGLAND</option>
+                            </select>
+                        </div>
+                        <hr>
+                        <div  class="button">
+                            <select name="COLOR" id="">
+                                <option value="">FABRIC MATERIAL</option>
+                                <option value="">NIKE</option>
+                                <option value="">PUMA</option>
+                                <option value="">ADDIDAS</option>
+                                <option value="">PETER ENGLAND</option>
+                            </select>
+                        </div>
+                        <hr>
+                        <div  class="button">
+                            <select name="COLOR" id="">
+                                <option value="">FEATURES</option>
+                                <option value="">NIKE</option>
+                                <option value="">PUMA</option>
+                                <option value="">ADDIDAS</option>
+                                <option value="">PETER ENGLAND</option>
+                            </select>
+                        </div>
+                        <hr>
+                        <div  class="button">
+                            <select name="COLOR" id="">
+                                <option value="">OCASION</option>
+                                <option value="">NIKE</option>
+                                <option value="">PUMA</option>
+                                <option value="">ADDIDAS</option>
+                                <option value="">PETER ENGLAND</option>
+                            </select>
+                        </div>
+                        <hr>
+                        <div  class="button">
+                            <select name="COLOR" id="">
+                                <option value="">PRODUCT</option>
+                                <option value="">NIKE</option>
+                                <option value="">PUMA</option>
+                                <option value="">ADDIDAS</option>
+                                <option value="">PETER ENGLAND</option>
+                            </select>
+                        </div>
+                        <hr>
+                        <div id="color" class="button">
+                            <select name="COLOR" id="">
+                                <option value="">LENGTH</option>
+                                <option value="">NIKE</option>
+                                <option value="">PUMA</option>
+                                <option value="">ADDIDAS</option>
+                                <option value="">PETER ENGLAND</option>
+                            </select>
+                        </div>
+                        <hr>
+                        <div  class="button">
+                            <select name="COLOR" id="">
+                                <option value="">SLEEVE LENGHT</option>
+                                <option value="">NIKE</option>
+                                <option value="">PUMA</option>
+                                <option value="">ADDIDAS</option>
+                                <option value="">PETER ENGLAND</option>
+                            </select>
+                        </div>
+                        <hr>
+                        <div  class="button">
+                            <select name="COLOR" id="">
+                                <option value="">STYLE</option>
+                                <option value="">NIKE</option>
+                                <option value="">PUMA</option>
+                                <option value="">ADDIDAS</option>
+                                <option value="">PETER ENGLAND</option>
+                            </select> 
+                        </div>
+                        <hr>
+                    </div>
+                   
+                </div>
+                    
+                
+                
+                
+               
+
+            </div>
+        </div>  
+    <div id="cont"></div>
+</div> 
 <div id="cont"></div>
 <div id="foot1">
     <div>
@@ -200,13 +352,13 @@
 </body>
 </html>
 <script>
-    let url="http://localhost:8080/products/"
+    let url="https://wild-tan-beret.cyclic.app/products/"
 
     fetch(url)
     .then((res)=>res.json())
     .then((data)=>{
         bag=data;
-        displaydata(data)
+        displaydata(bag)
     })
 
     let cartitem=JSON.parse(localStorage.getItem("cartitem")) || [];
@@ -255,4 +407,42 @@ async function myfunc2(){
     function login(){
         window.location=("login.html")
     }
+
+    document.querySelector("#mini-cart").addEventListener("click",cart)
+
+    function cart(){
+        window.location=("cart.html")
+    }
+
+
+function sortfunc(){
+    let s=document.querySelector("#shift1").value
+    
+    if(s=="low"){
+        let sortdata=bag.sort((a,b)=>{
+            return (a.price) - (b.price)
+        })
+        displaydata(sortdata)
+    }else{
+        let sortdata=bag.sort((a,b)=>{
+            return (b.price) - (a.price)
+        })
+        displaydata(sortdata)
+    }
+}
+sortfunc()
+
+
+function mychange(){
+    let myda=document.querySelector(".search").value
+    let newarr=bag.filter((ele)=>{
+        return ele.brand.toLowerCase().includes(myda.toLowerCase()) || ele.title.toLowerCase().includes(myda.toLowerCase())
+    })
+    displaydata(newarr)
+}
+mychange()
+
+
+
+
 </script>

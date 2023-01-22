@@ -47,6 +47,12 @@
  
    
 }
+#button:hover{
+    cursor: pointer;
+}
+#mini-cart:hover{
+    cursor: pointer;
+}
 #cont1>h3{
     font-family: Futura, Arial;
     font-size: 20px;

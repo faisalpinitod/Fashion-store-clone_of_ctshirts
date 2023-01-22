@@ -52,6 +52,9 @@ font-family: Futura, Arial;
    line-height:18px;
     color: rgb(55, 55, 55);
 }
+#mini-cart:hover{
+    cursor: pointer;
+}
 #drop>div>p:hover{
     cursor: pointer;
     background-color: white;

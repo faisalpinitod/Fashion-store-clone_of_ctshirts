@@ -1,6 +1,6 @@
 
 
-    fetch("http://localhost:8080/products")   
+    fetch("https://wild-tan-beret.cyclic.app/products")   
     .then((res)=>res.json())
     .then((data)=>{
         
@@ -74,14 +74,14 @@
         try{
             let title=document.querySelector("#title").value
             let price=document.querySelector("#price").value
-            let img=document.querySelector("#img").value
+            let img=document.querySelector("#img1").value
             let brand=document.querySelector("#brand").value
         
             let post_data={title,price,img,brand}
             console.log(post_data)
 
 
-            let regURL="http://localhost:8080/products/add"
+            let regURL="https://wild-tan-beret.cyclic.app/products/add"
 
             let response=await fetch(regURL,{
                 method:"POST",
@@ -117,7 +117,7 @@
                 console.log(post_data)
 
 
-                let regURL=`http://localhost:8080/products/update/${id}`
+                let regURL=`https://wild-tan-beret.cyclic.app/products/update/${id}`
 
                 let response=await fetch(regURL,{
                     method:"PATCH",
@@ -133,7 +133,7 @@
                 let id=document.querySelector("#id").value
              
   
-                let regURL=`http://localhost:8080/products/delete/${id}`
+                let regURL=`https://wild-tan-beret.cyclic.app/products/delete/${id}`
 
                 let response=await fetch(regURL,{
                     method:"DELETE",
@@ -151,3 +151,20 @@
             console.log({"msg":"Something went wrong"})
         }
     }
+
+
+
+
+    document.querySelector("#mini-cart").addEventListener("click",login1)
+
+    function login1(){
+        window.location=("cart.html")
+    }
+    document.querySelector("#img").addEventListener("click",login5)
+
+    function login5(){
+        window.location=("product.html")
+    }
+
+
+ 
